@@ -56,17 +56,6 @@ inline long int floor_lg(mpz_class arg)//for arg positive integer type floor of 
 	return ret;
 }
 
-/*
-inline long int floor_lg(long int arg)//for arg positive integer type floor of logarithm base 2 of arg
-{
-	assert(arg>0); 
-	long int ret = 0;
-	while((arg = arg/2)) ++ret;
-	
-	return ret;
-}
-*/
-
 inline int floor_lg(double arg)
 {
 	return static_cast<int>(std::log2(arg));
